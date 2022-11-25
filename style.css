@@ -12,15 +12,17 @@ body{
     font-weight: 400;
     font-size: 17px;
     color: #646464;
+    line-height: 1.7;
 }
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #212121;
 }
+/* Basic CSS end */
 
 /* Header Area CSS */
 .header-area{
@@ -47,10 +49,85 @@ h4 {
     border-radius: 15px 0;
     padding: 10px 20px;
 }
+/* Header area CSS End */
+
+/* Footer CSS Start */
+.footer-area{
+    background-color: #F8F8F8;
+    position: relative;
+}
+.footer-area .footer-top{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.footer-about img{
+    margin-bottom: 18px;
+}
+.footer-area h3{
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.footer-area p{
+    font-size: 16px;
+}
+.footer-link ul{
+    margin: 0;
+    padding: 0;
+}
+.footer-link ul li{
+    list-style: none;
+}
+.footer-link ul li a{
+    text-decoration: none;
+    padding: 5px 0;
+    display: inline-block;
+    color: #646464;
+    font-size: 16px;
+}
+.footer-link ul li a:hover{
+    color: #37806B;
+}
+.footer-link address{
+    line-height: 2.2;
+    font-size: 16px;
+}
+.footer-area .social-link a{
+    text-decoration: none;
+}
+.footer-area .social-link a i{
+    color: #F8F8F8;
+    background-color: #d5d5d5;
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.footer-area .social-link a i:hover{
+    background-color: #37806B;
+}
+.footer-bottom{
+    border-top: 1px solid #c4c4c4;
+}
+.footer-area p{
+    margin: 0;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: #37806B;
+}
+.footer-area .design{
+    position: absolute;
+    top: -50px;
+}
+.footer-area .design img{
+    height: 100px;
+}
+/* Footer Area CSS End */
 
 /* Responsive CSS */
 @media (max-width: 991px){
-/* Header Area CSS */
+/* Header Area Responsive CSS */
 .header-area .nav-item{
     margin-left: 0;
     margin: 5px 0;
@@ -69,7 +146,39 @@ h4 {
 }
 .header-area .navbar-toggler{
     box-shadow: none;
+    border: none;
 }
+/* Header area Responsive end */
+
+/* Footer Area Responsive CSS */
+.footer-area{
+    text-align: center;
+}
+.footer-area .footer-top{
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.footer-about{
+    margin-bottom: 30px;
+}
+.footer-about img{
+    margin-bottom: 30px;
+}
+.footer-link{
+    margin-bottom: 30px;
+}
+.footer-link ul li a{
+    padding: 10px 0;
+}
+.footer-area .social-link h3{
+    margin-bottom: 30px;
+}
+.footer-area .social-link a{
+    margin-left: 20px;
+}
+/* Footer area Responsive CSS End */
+
+
 }
 
     
