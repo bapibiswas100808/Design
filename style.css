@@ -22,6 +22,36 @@ h4 {
     font-weight: 500;
     color: #212121;
 }
+.theme-button{
+    display: inline-block;
+    color: #ffff;
+    background-color: #37806B;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+}
+.theme-button:hover{
+    color: #ffff;
+    background-color: #CAA892;
+    border-radius: 25px 0;
+}
+.design-image{
+    position: relative;
+    z-index: 1;
+    border-radius: 140px 0px;
+}
+.design-image::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 20px;
+    top: 20px;
+    z-index: -1;
+    border: 2px solid #B0855B;
+    border-radius: 140px 0px;
+}
 /* Basic CSS end */
 
 /* Header Area CSS */
@@ -49,7 +79,37 @@ h4 {
     border-radius: 15px 0;
     padding: 10px 20px;
 }
+.header-area .nav-item:last-child .nav-link:hover{
+    background-color: #37806B;
+}
 /* Header area CSS End */
+
+/* Main Area Start */
+
+/* Hero Area CSS Start */
+.hero-area{
+    padding: 70px 0;
+}
+.hero-text h3{
+    font-size: 20px;
+    color: #646464;
+    text-transform: uppercase;
+}
+.hero-text h2{
+    font-size: 72px;
+    color: #212121;
+    text-transform: capitalize;
+}
+.hero-text a{
+    margin-top: 15px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+/* Hero area CSS end */
+
+/* Main Area End */
 
 /* Footer CSS Start */
 .footer-area{
@@ -105,6 +165,7 @@ h4 {
 }
 .footer-area .social-link a i:hover{
     background-color: #37806B;
+    font-size: 25px;
 }
 .footer-bottom{
     border-top: 1px solid #c4c4c4;
@@ -125,18 +186,28 @@ h4 {
 }
 /* Footer Area CSS End */
 
-/* Responsive CSS */
+/* Responsive CSS Starts*/
+
 @media (max-width: 991px){
 /* Header Area Responsive CSS */
 .header-area .nav-item{
     margin-left: 0;
-    margin: 5px 0;
+    margin: 4px 0;
 }
 .header-area .nav-link{
     background-color: #ffff;
     border-radius: 15px 0;
-    border: 1px solid #212121;
+    border: 1px solid #646464;
     text-align: center;
+    background-color: #37806B;
+    color: #c4c4c4;
+}
+.header-area .nav-link:hover{
+    background-color: #B0855B;
+    color: #d5d5d5;
+}
+.header-area .nav-link.active{
+    color: #F8F8F8;
 }
 
 .header-area .nav-item:last-child{
@@ -149,6 +220,32 @@ h4 {
     border: none;
 }
 /* Header area Responsive end */
+
+
+/* Main area Responsive CSS */
+
+/* Hero area responsive CSS */
+.hero-area{
+    text-align: center;
+}
+.hero-area-image{
+    order: -1;
+}
+.hero-text{
+    margin-top: 100px;
+}
+.hero-text h2{
+    font-size: 60px;
+}
+.hero-area .theme-button {
+    width: 100%;
+    border-radius: 15px 15px;
+    padding: 20px 0;
+}
+
+/* Hero area responsive CSS end */
+
+/* Main area responsive CSS end */
 
 /* Footer Area Responsive CSS */
 .footer-area{
