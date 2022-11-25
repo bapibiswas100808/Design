@@ -1,0 +1,75 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+
+/* 
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Poppins', sans-serif; 
+*/
+/* Basic CSS */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #646464;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #212121;
+}
+
+/* Header Area CSS */
+.header-area{
+    padding: 30px 0;
+}
+.header-area .nav-item{
+    margin-left: 30px;
+}
+.header-area .nav-link{
+    text-transform: uppercase;
+    color: #111111;
+    font-weight: 600;
+}
+.header-area .nav-link.active{
+    color: #646464;
+}
+.header-area .nav-item:last-child{
+    margin-left: 45px;
+}
+.header-area .nav-item:last-child .nav-link{
+    color: #ffff;
+    background-color: #CAA892;
+    text-transform: capitalize;
+    border-radius: 15px 0;
+    padding: 10px 20px;
+}
+
+/* Responsive CSS */
+@media (max-width: 991px){
+/* Header Area CSS */
+.header-area .nav-item{
+    margin-left: 0;
+    margin: 5px 0;
+}
+.header-area .nav-link{
+    background-color: #ffff;
+    border-radius: 15px 0;
+    border: 1px solid #212121;
+    text-align: center;
+}
+
+.header-area .nav-item:last-child{
+    margin-left: 0;
+    margin-top: 20px;
+    border: none;
+}
+.header-area .navbar-toggler{
+    box-shadow: none;
+}
+}
+
+    
