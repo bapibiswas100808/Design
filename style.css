@@ -39,15 +39,14 @@ h4 {
 .design-image{
     position: relative;
     z-index: 1;
-    border-radius: 140px 0px;
 }
 .design-image::after{
     position: absolute;
     content: "";
     height: 100%;
     width: 100%;
-    left: 20px;
-    top: 20px;
+    left: 30px;
+    top: 30px;
     z-index: -1;
     border: 2px solid #B0855B;
     border-radius: 140px 0px;
@@ -106,6 +105,7 @@ h4 {
 
 .hero-image img{
     width: 100%;
+    border-radius: 140px 0;
 }
 /* Hero area CSS end */
 
@@ -238,8 +238,8 @@ h4 {
     font-size: 60px;
 }
 .hero-area .theme-button {
-    width: 100%;
-    border-radius: 15px 15px;
+    width: 50%;
+    border-radius: 15px 0px;
     padding: 20px 0;
 }
 
