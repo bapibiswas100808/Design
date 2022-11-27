@@ -71,7 +71,7 @@ h4 {
     background-image: url("assets/img/succes-text-image.png");
     -webkit-background-clip: text;
     color: transparent;
-    background-size: cover;
+    background-size: contain;
 }
 /* Basic CSS end */
 
@@ -225,6 +225,7 @@ h4 {
 .success-area{
     padding: 80px 0;
     position: relative;
+    margin-bottom: 100px;
 }
 .success-area .theme-button{
     margin-top: 35px;
@@ -237,6 +238,88 @@ h4 {
     height: 100px;
 }
 /* Sucess area CSS end */
+
+/* work area CSS starts */
+.work-area{
+    padding: 100px 0;
+    background-color: #F8F8F8;
+    position: relative;
+}
+.all-work{
+    margin-top: 100px;
+}
+.single-work{
+    display: flex;
+    justify-content: center;
+}
+.single-work-text{
+    background: #FFFFFF;
+    box-shadow: 0px 13px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 40px 0px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.single-work-text h3{
+    font-size: 50px;
+}
+.single-work-text::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 32%;
+    border-top: 1px solid #E0E0E0;
+    border-right: 1px solid #E0E0E0;
+    z-index: -1;
+    right: -65px;
+    bottom: 0px;
+}
+.special-work .single-work-text::after{
+    border-right: none;
+}
+.special-work{
+    margin-top: 100px;
+    position: relative;
+}
+.special-work::before{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 22%;
+    border-top: 1px solid #E0E0E0;
+    bottom: 0;
+    left: -13px;
+}
+.single-special-work{
+    position: relative;
+}
+.single-special-work::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 22%;
+    border-top: 1px solid #E0E0E0;
+    border-left: 1px solid #E0E0E0;
+    bottom: 0;
+    left: -13px;
+}
+.last-work .single-work-text::after{
+    border-top: none;
+}
+.work-area .design{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.work-area .design img{
+    height: 100px;
+}
+/* Work area CSS end */
 
 /* Main Area End */
 
@@ -321,6 +404,12 @@ h4 {
 /* Basic CSS */
 .section-heading h3{
     font-size: 40px;
+}
+.design-image img{
+    padding-right: 20px;
+}
+.design-image::after{
+    left: 0;
 }
 
 /* Header Area Responsive CSS */
@@ -430,6 +519,12 @@ h4 {
 .about-area .theme-button{
     width: 50%;
 }
+.about-area.design-image img{
+    padding-left: 20px;
+}
+.about-area.design-image::after{
+    right: 0;
+}
 /* About area responsive CSS end */
 
 /* Sucess area responsive CSS start */
@@ -444,6 +539,10 @@ h4 {
     width: 50%;
 }
 /* Sucess area responsive CSS end */
+
+/* Work area responsive CSS starts */
+
+/* Work area responsive CSS end */
 
 /* Main area responsive CSS end */
 
