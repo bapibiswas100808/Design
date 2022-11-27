@@ -51,6 +51,16 @@ h4 {
     border: 2px solid #B0855B;
     border-radius: 140px 0px;
 }
+.section-heading h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #646464;
+    font-weight: 600;
+}
+.section-heading h3{
+    font-size: 48px;
+    color: #212121;
+}
 /* Basic CSS end */
 
 /* Header Area CSS */
@@ -108,6 +118,55 @@ h4 {
     border-radius: 140px 0;
 }
 /* Hero area CSS end */
+
+/* Service Area CSS Start */
+.service-area{
+    padding: 100px 0;
+}
+.all-services{
+    margin-top: 60px;
+    position: relative;
+}
+.service-area .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -100px;
+
+}
+.service-area .owl-nav span{
+    height: 33px;
+    width: 33px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    color: #646464;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.service-area .owl-nav span:hover{
+    background-color: #37806B;
+    color: #FFFFFF;
+}
+.service-area .owl-nav .owl-next{
+    margin-left: 15px;
+}
+.single-service{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+    border-radius: 60px 0px;
+    padding: 40px 0 30px 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.single-service:hover{
+    background-color: #CAA892;
+    color: #FFFFFF;
+}
+.single-service:hover h3{
+    color: #FFFFFF;
+}
+
+/* Service Area CSS End */
 
 /* Main Area End */
 
@@ -186,10 +245,14 @@ h4 {
 }
 /* Footer Area CSS End */
 
-/* Responsive CSS Starts*/
+/* RESPONSIVE CSS STARTS*/
 
 @media (max-width: 991px){
+
 /* Header Area Responsive CSS */
+.header-area{
+    padding: 10px 0;
+}
 .header-area .nav-item{
     margin-left: 0;
     margin: 4px 0;
@@ -222,11 +285,12 @@ h4 {
 /* Header area Responsive end */
 
 
-/* Main area Responsive CSS */
+/* Main area Responsive CSS starts*/
 
-/* Hero area responsive CSS */
+/* Hero area responsive CSS starts */
 .hero-area{
     text-align: center;
+    padding: 40px 0;
 }
 .hero-area-image{
     order: -1;
@@ -244,6 +308,33 @@ h4 {
 }
 
 /* Hero area responsive CSS end */
+/* Service Area responsive CSS Start */
+.service-area {
+    text-align: center;
+    padding: 40px 0;
+}
+.all-services{
+    margin-top: 0;
+}
+.single-service img{
+ height: 40px !important;
+ width: 40px !important;
+}
+.service-area .owl-dots button{
+    height: 15px;
+    width: 15px;
+    background-color: #37806B;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.service-area .owl-dots button.active{
+    background-color: #B0855B;
+}
+.single-service{
+    padding: 40px 40px 80px 40px;
+}
+/* Service Area responsive CSS end */
 
 /* Main area responsive CSS end */
 
