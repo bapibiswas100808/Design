@@ -1,6 +1,6 @@
 /* Google Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700&display=swap');
 
 /* 
    font-family: 'Open Sans', sans-serif;
@@ -36,9 +36,12 @@ h4 {
     background-color: #CAA892;
     border-radius: 25px 0;
 }
-.design-image{
+.design-image {
     position: relative;
     z-index: 1;
+}
+.design-image img{
+    border-radius: 140px 0;
 }
 .design-image::after{
     position: absolute;
@@ -60,6 +63,15 @@ h4 {
 .section-heading h3{
     font-size: 48px;
     color: #212121;
+}
+.design-text h5{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 288px;
+    font-weight: 700;
+    background-image: url("assets/img/succes-text-image.png");
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
 }
 /* Basic CSS end */
 
@@ -181,6 +193,11 @@ h4 {
 .about-area{
     padding: 30px 0;
     position: relative;
+    margin-bottom: 80px;
+}
+.about-area .about-image img{
+    width: 100%;
+    border-radius: 140px 0;
 }
 .about-area .design-image::after{
     left: -20px;
@@ -204,6 +221,22 @@ h4 {
     margin-bottom: 50px;
 }
 /* About area CSS end */
+/* Sucess area CSS start */
+.success-area{
+    padding: 80px 0;
+    position: relative;
+}
+.success-area .theme-button{
+    margin-top: 35px;
+}
+.success-area .design{
+    position: absolute;
+    top: -50px;
+}
+.success-area .design img{
+    height: 100px;
+}
+/* Sucess area CSS end */
 
 /* Main Area End */
 
@@ -386,6 +419,7 @@ h4 {
 .about-area{
     text-align: center;
     padding: 80px 0;
+    margin-bottom: 0;
 }
 .about-area .about-text{
     margin-left: 0;
@@ -397,6 +431,19 @@ h4 {
     width: 50%;
 }
 /* About area responsive CSS end */
+
+/* Sucess area responsive CSS start */
+.success-area{
+    padding: 10px 0;
+    text-align: center;
+}
+.success-area .success-text{
+    margin-bottom: 60px;
+}
+.success-area .theme-button{
+    width: 50%;
+}
+/* Sucess area responsive CSS end */
 
 /* Main area responsive CSS end */
 
