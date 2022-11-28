@@ -272,13 +272,13 @@ h4 {
 .single-work-text::after{
     position: absolute;
     content: "";
-    height: 100px;
-    width: 32%;
+    height: 51%;
+    width: 33%;
     border-top: 1px solid #E0E0E0;
     border-right: 1px solid #E0E0E0;
     z-index: -1;
-    right: -65px;
-    bottom: 0px;
+    right: -33%;
+    bottom: -1%;
 }
 .special-work .single-work-text::after{
     border-right: none;
@@ -290,11 +290,11 @@ h4 {
 .special-work::before{
     position: absolute;
     content: "";
-    height: 100px;
+    height: 50%;
     width: 22%;
     border-top: 1px solid #E0E0E0;
-    bottom: 0;
-    left: -13px;
+    bottom: 0%;
+    left: -4%;
 }
 .single-special-work{
     position: relative;
@@ -302,12 +302,12 @@ h4 {
 .single-special-work::after{
     position: absolute;
     content: "";
-    height: 100px;
+    height: 51%;
     width: 22%;
     border-top: 1px solid #E0E0E0;
     border-left: 1px solid #E0E0E0;
-    bottom: 0;
-    left: -13px;
+    bottom: -1%;
+    left: -4%;
 }
 .last-work .single-work-text::after{
     border-top: none;
@@ -527,12 +527,6 @@ h4 {
 .about-area .design-image::after{
     left: 0px;
 }
-/* .about-area.design-image img{
-    padding-left: 20px !important;
-}
-.about-area.design-image::after{
-    right: 0;
-} */
 /* About area responsive CSS end */
 
 /* Sucess area responsive CSS start */
@@ -549,6 +543,47 @@ h4 {
 /* Sucess area responsive CSS end */
 
 /* Work area responsive CSS starts */
+.work-area{
+    padding: 50px 0;
+}
+.all-work{
+    margin-top: 30px;
+    color: #111111;
+}
+.work-area .all-work{
+    text-align: center;
+}
+.work-area .single-work{
+    display: inline-block;
+}
+.work-area .special-work{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.all-work .single-work{
+    position: relative;
+}
+.all-work .single-work::after{
+    position: absolute;
+    content: "";
+    border: none;
+    height: 100%;
+    width: 100%;
+    right: 0%;
+    border-radius: 50px 0;
+    top: 10px;
+    left: 15px;
+    border: 2px solid #B0855B !important;
+}
+
+.single-work-text::after{
+    opacity: 10%;
+    background-color: #37806B;
+    right: -38%;
+    height: 118%;
+    top: -7%;
+    width: 171%;
+}
 
 /* Work area responsive CSS end */
 
