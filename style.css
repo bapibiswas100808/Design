@@ -42,6 +42,7 @@ h4 {
 }
 .design-image img{
     border-radius: 140px 0;
+    width: 100%;
 }
 .design-image::after{
     position: absolute;
@@ -409,7 +410,7 @@ h4 {
     padding-right: 20px;
 }
 .design-image::after{
-    left: 0;
+  width: 96%;
 }
 
 /* Header Area Responsive CSS */
@@ -475,7 +476,7 @@ h4 {
 /* Service Area responsive CSS Start */
 .service-area {
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 .all-services{
     margin-top: 0;
@@ -519,12 +520,19 @@ h4 {
 .about-area .theme-button{
     width: 50%;
 }
-.about-area.design-image img{
+.about-area .about-image img{
     padding-left: 20px;
+    padding-right: 0;
+}
+.about-area .design-image::after{
+    left: 0px;
+}
+/* .about-area.design-image img{
+    padding-left: 20px !important;
 }
 .about-area.design-image::after{
     right: 0;
-}
+} */
 /* About area responsive CSS end */
 
 /* Sucess area responsive CSS start */
