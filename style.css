@@ -141,6 +141,28 @@ h4 {
     margin-top: 60px;
     position: relative;
 }
+.single-service{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
+    border-radius: 60px 0px;
+    padding: 40px 0 30px 40px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.single-service:hover{
+    background-color: #CAA892;
+    color: #FFFFFF;
+}
+.single-service:hover h3{
+    color: #FFFFFF;
+}
+.service-area .design{
+    position: absolute;
+    top: -50px;
+}
+.service-area .design img{
+    height: 100px;
+}
 .service-area .owl-nav{
     position: absolute;
     right: 0;
@@ -164,28 +186,6 @@ h4 {
 }
 .service-area .owl-nav .owl-next{
     margin-left: 15px;
-}
-.single-service{
-    background: #FFFFFF;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.14);
-    border-radius: 60px 0px;
-    padding: 40px 0 30px 40px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.single-service:hover{
-    background-color: #CAA892;
-    color: #FFFFFF;
-}
-.single-service:hover h3{
-    color: #FFFFFF;
-}
-.service-area .design{
-    position: absolute;
-    top: -50px;
-}
-.service-area .design img{
-    height: 100px;
 }
 
 /* Service Area CSS End */
@@ -321,6 +321,94 @@ h4 {
     height: 100px;
 }
 /* Work area CSS end */
+
+/* Testimonial area CSS Starts */
+.testimonial-area{
+    padding: 100px 0;
+    position: relative;
+}
+.all-testimonial{
+    margin-top: 70px;
+    position: relative;
+}
+.single-testimonial{
+    padding: 20px;
+}
+.testimonial-content{
+    display: flex;
+    padding: 40px;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+}
+.testimonial-content::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    left: 65px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;  
+    z-index: -1;
+}
+.testimonial-image{
+    margin-right: 20px;
+}
+.testimonial-image img{
+    width: 130px !important;
+    height: 130px;
+}
+.testimonial-text h3{
+    font-size: 24px;
+}
+.testimonial-text h3 span{
+    font-size: 16px;
+    color:#646464 ;
+}
+.icon-image{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.icon-image img{
+    width: 25px;
+    height: auto;
+}
+.testimonial-area .owl-nav{
+    position: absolute;
+    right: 0;
+    top: -100px;
+
+}
+.testimonial-area .owl-nav span{
+    height: 33px;
+    width: 33px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    color: #646464;
+    box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    font-weight: 700;
+}
+.testimonial-area .owl-nav span:hover{
+    background-color: #37806B;
+    color: #FFFFFF;
+}
+.testimonial-area .owl-nav .owl-next{
+    margin-left: 15px;
+}
+.testimonial-area .design{
+    position: absolute;
+    top: -50px;
+}
+.testimonial-area .design img{
+    height: 100px;
+}
+/* Testimonial area CSS End */
 
 /* Main Area End */
 
@@ -547,14 +635,11 @@ h4 {
     padding: 50px 0;
 }
 .all-work{
-    margin-top: 30px;
+    margin-top: 50px;
     color: #111111;
 }
 .work-area .all-work{
     text-align: center;
-}
-.work-area .single-work{
-    display: inline-block;
 }
 .work-area .special-work{
     margin-top: 50px;
@@ -562,6 +647,7 @@ h4 {
 }
 .all-work .single-work{
     position: relative;
+    display: inline-block;
 }
 .all-work .single-work::after{
     position: absolute;
@@ -575,6 +661,9 @@ h4 {
     left: 15px;
     border: 2px solid #B0855B !important;
 }
+.special-work::before{
+    border-top: none;
+}
 
 .single-work-text::after{
     opacity: 10%;
@@ -586,6 +675,50 @@ h4 {
 }
 
 /* Work area responsive CSS end */
+
+/* Testimonial area responsive CSS start */
+.all-testimonial{
+    margin-top: 0;
+}
+.testimonial-content{
+    align-items: center;
+    /* padding: 0; */
+    padding: 20px 0;
+}
+.testimonial-content h3{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.testimonial-content h3 span{
+    font-size: 15px;
+} 
+ .testimonial-content p{
+    margin-bottom: 0;
+    font-size: 15px;
+} 
+.icon-image{
+    top: 15px;
+    right: 15px;
+}
+.icon-image img{
+    height: auto;
+    width: 28px !important;
+}
+.testimonial-area .owl-dots{
+    text-align: center;
+}
+.testimonial-area .owl-dots button{
+    height: 15px;
+    width: 15px;
+    background-color: #37806B;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.testimonial-area .owl-dots button.active{
+    background-color: #B0855B;
+}
+/* Testimonial area Responsive CSS end */
 
 /* Main area responsive CSS end */
 
