@@ -284,12 +284,12 @@ h4 {
     position: absolute;
     content: "";
     height: 51%;
-    width: 33%;
+    width: 32%;
     border-top: 1px solid #E0E0E0;
     border-right: 1px solid #E0E0E0;
     z-index: -1;
-    right: -33%;
-    bottom: -1%;
+    right: -32.5%;
+    bottom: 0;
 }
 .special-work .single-work-text::after{
     border-right: none;
@@ -317,7 +317,7 @@ h4 {
     width: 22%;
     border-top: 1px solid #E0E0E0;
     border-left: 1px solid #E0E0E0;
-    bottom: -1%;
+    bottom: 1%;
     left: -4%;
 }
 .last-work .single-work-text::after{
@@ -673,7 +673,7 @@ h4 {
 /* Service Area responsive CSS Start */
 .service-area {
     text-align: center;
-    padding: 60px 0;
+    padding: 70px 0;
 }
 .all-services{
     margin-top: 0;
@@ -741,7 +741,7 @@ h4 {
 
 /* Work area responsive CSS starts */
 .work-area{
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .all-work{
     margin-top: 50px;
@@ -787,7 +787,7 @@ h4 {
 
 /* Testimonial area responsive CSS start */
 .testimonial-area{
-    padding: 50px 0;
+    padding: 70px 0;
 }
 .all-testimonial{
     margin-top: 0;
@@ -851,7 +851,7 @@ h4 {
     margin: 0;
 }
 .first-blog{
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .blog-area p{
     margin-bottom: 30px;
