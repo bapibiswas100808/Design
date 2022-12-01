@@ -712,7 +712,7 @@ h4 {
     margin-left: 0;
 }
 .about-area .about-image{
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .about-area .theme-button{
     width: 50%;
@@ -838,7 +838,7 @@ h4 {
 /* Testimonial area Responsive CSS end */
 /* Blog Area Responsive CSS starts */
 .blog-area{
-    padding: 50px 0;
+    padding: 70px 0;
     text-align: center;
 }
 .blog-area .section-heading {
@@ -853,17 +853,31 @@ h4 {
 .first-blog{
     margin-bottom: 40px;
 }
+.blog-area p{
+    margin-bottom: 30px;
+}
 /* Blog Area Responsive CSS end */
 
 /* Sign up area responsive CSS starts */
 .signup-area{
-    padding: 60px 0;
+    padding: 100px 0;
+}
+.signup-area .form-control{
+    font-size: 15px;
+    padding: 5px 20px;
+    border: 20px 0 0 0;
+}
+.signup-area button {
+    padding: 5px 20px;
 }
 .signup-text h3{
     font-size: 25px;
 }
 .signup-text h3::after{
     width: 250px;
+}
+.signup-area p{
+    margin-bottom: 30px;
 }
 /* Sign up area responsive CSS starts */
 
