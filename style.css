@@ -47,10 +47,29 @@ h4 {
 .design-image::after{
     position: absolute;
     content: "";
-    height: 100%;
-    width: 100%;
+    right: -20px;
+    bottom: -20px;
     left: 20px;
     top: 20px;
+    z-index: -1;
+    border: 2px solid #B0855B;
+    border-radius: 140px 0px;
+}
+.design-image-two {
+    position: relative;
+    z-index: 1;
+}
+.design-image-two img{
+    border-radius: 140px 0;
+    width: 100%;
+}
+.design-image-two::after{
+    position: absolute;
+    content: "";
+    right: 20px;
+    bottom: 20px;
+    left: -20px;
+    top: -20px;
     z-index: -1;
     border: 2px solid #B0855B;
     border-radius: 140px 0px;
@@ -195,14 +214,6 @@ h4 {
     padding: 30px 0;
     position: relative;
     margin-bottom: 80px;
-}
-.about-area .about-image img{
-    width: 100%;
-    border-radius: 140px 0;
-}
-.about-area .design-image::after{
-    left: -20px;
-    top: -20px;
 }
 .about-text{
     margin-left: 80px;
@@ -362,6 +373,8 @@ h4 {
     height: 130px;
 }
 .testimonial-text h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
     font-size: 24px;
 }
 .testimonial-text h3 span{
@@ -370,11 +383,11 @@ h4 {
 }
 .icon-image{
     position: absolute;
-    top: 40px;
-    right: 40px;
+    top: 30px;
+    right: 30px;
 }
 .icon-image img{
-    width: 25px;
+    width: 30px !important;
     height: auto;
 }
 .testimonial-area .owl-nav{
@@ -409,6 +422,84 @@ h4 {
     height: 100px;
 }
 /* Testimonial area CSS End */
+
+/* Blog area CSS starts */
+.blog-area{
+    background-color: #F8F8F8;
+    padding: 100px 0;
+}
+.blog-area .section-heading{
+    margin-bottom: 70px;
+}
+.single-blog{
+    margin: 50px;
+}
+.blog-text{
+    margin-top: 70px;
+}
+.blog-text h3{
+    font-family: 'Open Sans', sans-serif; 
+    font-weight: 600;
+    font-size: 25px;
+}
+.first-blog{
+    margin-left: 0;
+}
+.second-blog{
+    margin-right: 0;
+}
+/* Blog area CSS end */
+
+/* Sign up area CSS start */
+.signup-area{
+    padding: 180px 0;
+    position: relative;
+}
+.signup-area .form-control{
+    background-color: #eeeeee;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: 20px 0 0 0;
+}
+.signup-area button {
+    border: none;
+    background-color: #37806B;
+    padding: 10px 40px;
+    color: #FFFFFF;
+    border-radius: 0 0 20px 0;
+}
+.signup-area button:hover{
+    background-color: #CAA892;
+}
+.signup-text h3{
+    font-size: 48px;
+    position: relative;
+    margin-bottom: 22px;
+    padding-bottom: 22px;
+}
+.signup-text p{
+    margin-bottom: 45px;
+}
+.signup-text h3::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 400px;
+    background-color: #c4c4c4;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.signup-area .design{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+.signup-area .design img{
+    height: 100px;
+}
+/* Sign up area CSS end */
 
 /* Main Area End */
 
@@ -492,13 +583,31 @@ h4 {
 @media (max-width: 991px){
 /* Basic CSS */
 .section-heading h3{
-    font-size: 40px;
+    font-size: 25px;
 }
-.design-image img{
+/* .design-image img{
     padding-right: 20px;
 }
 .design-image::after{
   width: 96%;
+} */
+.design-image{
+    padding-right: 20px;
+}
+.design-image::after{
+    left: 20px;
+    right: 0;
+    top: 20px;
+    bottom: -20px;
+}
+.design-image-two{
+    padding-left: 20px;
+}
+.design-image-two::after{
+    left: 0px;
+    right: 20px;
+    top: -20px;
+    bottom: 20px;
 }
 
 /* Header Area Responsive CSS */
@@ -549,10 +658,10 @@ h4 {
     order: -1;
 }
 .hero-text{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .hero-text h2{
-    font-size: 60px;
+    font-size: 40px;
 }
 .hero-area .theme-button {
     width: 50%;
@@ -609,8 +718,8 @@ h4 {
     width: 50%;
 }
 .about-area .about-image img{
-    padding-left: 20px;
-    padding-right: 0;
+    left: 20px;
+    right: 0;
 }
 .about-area .design-image::after{
     left: 0px;
@@ -677,32 +786,40 @@ h4 {
 /* Work area responsive CSS end */
 
 /* Testimonial area responsive CSS start */
+.testimonial-area{
+    padding: 50px 0;
+}
 .all-testimonial{
     margin-top: 0;
 }
 .testimonial-content{
     align-items: center;
-    /* padding: 0; */
-    padding: 20px 0;
+    padding: 40px 20px;
+    flex-direction: column;
+    background-color: #37806B;
+    border-radius: 70px 0;
+}
+.testimonial-content::after{
+    left: 0;
+    top: 105px;
 }
 .testimonial-content h3{
     margin-top: 30px;
     font-size: 20px;
 }
-.testimonial-content h3 span{
-    font-size: 15px;
-} 
+.testimonial-text h3 span{
+    font-size: 12px;
+}
  .testimonial-content p{
     margin-bottom: 0;
-    font-size: 15px;
 } 
 .icon-image{
-    top: 15px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
 }
 .icon-image img{
     height: auto;
-    width: 28px !important;
+    width: 25px !important;
 }
 .testimonial-area .owl-dots{
     text-align: center;
@@ -719,6 +836,36 @@ h4 {
     background-color: #B0855B;
 }
 /* Testimonial area Responsive CSS end */
+/* Blog Area Responsive CSS starts */
+.blog-area{
+    padding: 50px 0;
+    text-align: center;
+}
+.blog-area .section-heading {
+    margin-bottom: 30px;
+}
+.blog-text{
+    margin-top: 50px;
+}
+.single-blog{
+    margin: 0;
+}
+.first-blog{
+    margin-bottom: 40px;
+}
+/* Blog Area Responsive CSS end */
+
+/* Sign up area responsive CSS starts */
+.signup-area{
+    padding: 60px 0;
+}
+.signup-text h3{
+    font-size: 25px;
+}
+.signup-text h3::after{
+    width: 250px;
+}
+/* Sign up area responsive CSS starts */
 
 /* Main area responsive CSS end */
 
