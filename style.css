@@ -692,7 +692,7 @@ h4 {
     background-color: #37806B;
     display: inline-block;
     border-radius: 50%;
-    margin-left: 15px;
+    margin: 8px;
 }
 .service-area .owl-dots button.active{
     background-color: #B0855B;
@@ -788,6 +788,7 @@ h4 {
 /* Testimonial area responsive CSS start */
 .testimonial-area{
     padding: 70px 0;
+    padding-bottom: 30px;
 }
 .all-testimonial{
     margin-top: 0;
@@ -802,6 +803,9 @@ h4 {
 .testimonial-content::after{
     left: 0;
     top: 105px;
+}
+.testimonial-image{
+    margin-right: 0;
 }
 .testimonial-content h3{
     margin-top: 30px;
@@ -830,7 +834,7 @@ h4 {
     background-color: #37806B;
     display: inline-block;
     border-radius: 50%;
-    margin-left: 15px;
+    margin: 8px;
 }
 .testimonial-area .owl-dots button.active{
     background-color: #B0855B;
@@ -840,6 +844,7 @@ h4 {
 .blog-area{
     padding: 70px 0;
     text-align: center;
+    padding-top: 40px;
 }
 .blog-area .section-heading {
     margin-bottom: 30px;
@@ -860,7 +865,7 @@ h4 {
 
 /* Sign up area responsive CSS starts */
 .signup-area{
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .signup-area .form-control{
     font-size: 15px;
@@ -871,10 +876,10 @@ h4 {
     padding: 5px 20px;
 }
 .signup-text h3{
-    font-size: 25px;
+    font-size: 27px;
 }
 .signup-text h3::after{
-    width: 250px;
+    width: 230px;
 }
 .signup-area p{
     margin-bottom: 30px;
